@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "6cba605be0c6c2dbf5b57c0ad547044f"
+build_time: [560010255, 951188000]
+inputs:
+  "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/WeatherApp/ViewController.swift": [560010252, 0]
+  "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/WeatherApp/AppDelegate.swift": [560010252, 0]
