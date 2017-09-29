@@ -113,13 +113,23 @@ SWIFT_CLASS("_TtC10WeatherApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISearchBar;
+@class UILabel;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10WeatherApp14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIBarPositioningDelegate, UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified datetimeLbl;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified weatherImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tempLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cityLbl;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)updateUI;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,23 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oE9-ir-bN2">
-                                <rect key="frame" x="77" y="78" width="261" height="458"/>
+                                <rect key="frame" x="77" y="78" width="261" height="473"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-ys-ZGx">
-                                        <rect key="frame" x="43" y="0.0" width="175" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-ys-ZGx">
+                                        <rect key="frame" x="41" y="0.0" width="179" height="65"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Miami" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obU-zx-pfP">
-                                                <rect key="frame" x="18" y="0.0" width="140" height="29"/>
+                                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="City, or Zipcode" translatesAutoresizingMaskIntoConstraints="NO" id="tOf-QH-LeY">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="44"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="29" id="LnO-BS-7c5"/>
-                                                    <constraint firstAttribute="width" constant="140" id="jgl-or-IsJ"/>
+                                                    <constraint firstAttribute="height" constant="46" id="5gM-ec-RSg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Friday 11:29 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCw-7L-DRd">
-                                                <rect key="frame" x="0.0" y="29" width="175" height="21"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5gM-ec-RSg"/>
+                                                    </mask>
+                                                </variation>
+                                            </searchBar>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Friday 11:29 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCw-7L-DRd">
+                                                <rect key="frame" x="2" y="44" width="175" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="lcV-k5-QHr"/>
                                                     <constraint firstAttribute="width" constant="174" id="u7s-0e-U1r"/>
@@ -44,28 +47,62 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tOf-QH-LeY" firstAttribute="top" secondItem="vd8-ys-ZGx" secondAttribute="topMargin" id="DD0-rl-MMF"/>
+                                            <constraint firstItem="tOf-QH-LeY" firstAttribute="leading" secondItem="vd8-ys-ZGx" secondAttribute="leadingMargin" id="EEu-8Z-MCq"/>
+                                            <constraint firstItem="tOf-QH-LeY" firstAttribute="trailing" secondItem="vd8-ys-ZGx" secondAttribute="trailingMargin" id="llh-p4-fMo"/>
+                                            <constraint firstItem="SCw-7L-DRd" firstAttribute="top" secondItem="tOf-QH-LeY" secondAttribute="bottom" id="rbr-Tc-nc6"/>
+                                        </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="jZz-9S-xJl">
-                                        <rect key="frame" x="0.0" y="75" width="261" height="260"/>
+                                        <rect key="frame" x="0.0" y="90" width="261" height="260"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="260" id="7hk-fh-crh"/>
                                             <constraint firstAttribute="width" constant="260" id="fLL-8g-dVJ"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6eZ-Ko-1zQ">
-                                        <rect key="frame" x="53" y="360" width="155" height="98"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6eZ-Ko-1zQ">
+                                        <rect key="frame" x="53" y="375" width="155" height="98"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="87 °C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VZ-uf-y7u">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Mst-dz-T8r">
                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="41"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="87" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VZ-uf-y7u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="155" id="E5V-1k-gaJ"/>
+                                                            <constraint firstAttribute="height" constant="41" id="FgR-vr-Pf1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="E5V-1k-gaJ"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCS-DG-yGr">
+                                                        <rect key="frame" x="80" y="0.0" width="75" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="UjB-RR-D0J"/>
+                                                            <constraint firstAttribute="width" constant="155" id="jVS-DD-WYm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="jVS-DD-WYm"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="155" id="E5V-1k-gaJ"/>
-                                                    <constraint firstAttribute="height" constant="41" id="FgR-vr-Pf1"/>
+                                                    <constraint firstAttribute="width" constant="155" id="IpH-jy-CSS"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="34M-KP-U62">
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="34M-KP-U62">
                                                 <rect key="frame" x="0.0" y="56" width="155" height="42"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SUN &amp; RAIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-RQ-zob">
@@ -98,6 +135,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="cityLbl" destination="dui-tc-ujw" id="J7d-kT-rWR"/>
+                        <outlet property="datetimeLbl" destination="SCw-7L-DRd" id="z3H-Zl-NJV"/>
+                        <outlet property="descriptionLbl" destination="vgb-RQ-zob" id="2rf-ek-w34"/>
+                        <outlet property="searchBar" destination="tOf-QH-LeY" id="IPe-l6-3m8"/>
+                        <outlet property="tempLbl" destination="7VZ-uf-y7u" id="oGl-Rv-rQ7"/>
+                        <outlet property="weatherImg" destination="jZz-9S-xJl" id="wc0-Of-1xi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

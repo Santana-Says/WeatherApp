@@ -1,7 +1,8 @@
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Alamofire-dummy.o
-/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/AFError.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Alamofire.o
-/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/DispatchQueue+Alamofire.o
+/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Download.o
+/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Error.o
+/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Manager.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/MultipartFormData.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/NetworkReachabilityManager.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Notifications.o
@@ -11,9 +12,8 @@
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/ResponseSerialization.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Result.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/ServerTrustPolicy.o
-/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/SessionDelegate.o
-/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/SessionManager.o
-/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/TaskDelegate.o
+/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Stream.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Timeline.o
+/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Upload.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Validation.o
 /Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal/x86_64/Alamofire_vers.o
