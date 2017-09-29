@@ -1,0 +1,105 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "URLConvertible"
+- "URLRequestConvertible"
+- "request"
+provides-nominal:
+- "P9Alamofire14URLConvertible"
+- "SS"
+- "P9Alamofire21URLRequestConvertible"
+provides-member:
+- ["P9Alamofire14URLConvertible", ""]
+- ["SS", ""]
+- ["P9Alamofire21URLRequestConvertible", ""]
+- ["P9Alamofire21URLRequestConvertible", "urlRequest"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AFError"
+- "URL"
+- "String"
+- "URLRequestConvertible"
+- "URLComponents"
+- "DataRequest"
+- "URLRequest"
+- "URLConvertible"
+depends-member:
+- !private ["O9Alamofire7AFError", "deinit"]
+- !private ["O9Alamofire7AFError", "invalidURL"]
+- !private ["Ps10Comparable", "AFError"]
+- !private ["Ps10Comparable", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "AFError"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps9Equatable", "AFError"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "AFError"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "URL"]
+- !private ["Ps8Hashable", "AFError"]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps14MirrorPathType", "AFError"]
+- !private ["Ps14MirrorPathType", "URL"]
+- !private ["Ps16OutputStreamType", "AFError"]
+- !private ["Ps16OutputStreamType", "URL"]
+- !private ["Ps16RawRepresentable", "invalidURL"]
+- !private ["Ps10Streamable", "AFError"]
+- !private ["Ps10Streamable", "URL"]
+- !private ["SS", "AFError"]
+- ["SS", "URL"]
+- ["SS", "deinit"]
+- !private ["Ps30StringInterpolationConvertible", "AFError"]
+- !private ["Ps30StringInterpolationConvertible", "URL"]
+- !private ["Ps24StringLiteralConvertible", "AFError"]
+- !private ["Ps24StringLiteralConvertible", "URL"]
+- !private ["P9Alamofire14URLConvertible", "AFError"]
+- ["P9Alamofire14URLConvertible", "URL"]
+- ["P9Alamofire14URLConvertible", ""]
+- ["P9Alamofire21URLRequestConvertible", "URLRequest"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "AFError"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "URL"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "AFError"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "URL"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "AFError"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "URL"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "AFError"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "URL"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "AFError"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "URL"]
+- !private ["Ps21_ObjectiveCBridgeable", "AFError"]
+- !private ["Ps21_ObjectiveCBridgeable", "URL"]
+- !private ["Ps12_Reflectable", "AFError"]
+- !private ["Ps12_Reflectable", "URL"]
+depends-nominal:
+- !private "O9Alamofire7AFError"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps8Hashable"
+- !private "Ps14MirrorPathType"
+- !private "Ps16OutputStreamType"
+- !private "Ps16RawRepresentable"
+- !private "Ps10Streamable"
+- "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "P9Alamofire14URLConvertible"
+- "P9Alamofire21URLRequestConvertible"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "2c28b3101d9b7add554243f664c08605"

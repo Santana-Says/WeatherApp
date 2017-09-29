@@ -1,0 +1,297 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AFError"
+- "AdaptError"
+provides-nominal:
+- "O9Alamofire7AFError"
+- "OO9Alamofire7AFError30ParameterEncodingFailureReason"
+- "OO9Alamofire7AFError30MultipartEncodingFailureReason"
+- "OO9Alamofire7AFError31ResponseValidationFailureReason"
+- "OO9Alamofire7AFError34ResponseSerializationFailureReason"
+- "V9Alamofire10AdaptError"
+provides-member:
+- ["O9Alamofire7AFError", ""]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", ""]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", ""]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", ""]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", ""]
+- ["V9Alamofire10AdaptError", ""]
+- ["O9Alamofire7AFError", "isInvalidURLError"]
+- ["O9Alamofire7AFError", "isParameterEncodingError"]
+- ["O9Alamofire7AFError", "isMultipartEncodingError"]
+- ["O9Alamofire7AFError", "isResponseValidationError"]
+- ["O9Alamofire7AFError", "isResponseSerializationError"]
+- ["O9Alamofire7AFError", "urlConvertible"]
+- ["O9Alamofire7AFError", "url"]
+- ["O9Alamofire7AFError", "underlyingError"]
+- ["O9Alamofire7AFError", "acceptableContentTypes"]
+- ["O9Alamofire7AFError", "responseContentType"]
+- ["O9Alamofire7AFError", "responseCode"]
+- ["O9Alamofire7AFError", "failedStringEncoding"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "underlyingError"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "url"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "underlyingError"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "acceptableContentTypes"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "responseContentType"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "responseCode"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "failedStringEncoding"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "underlyingError"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "localizedDescription"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "UnicodeScalarType"
+- "Bool"
+- "URLConvertible"
+- !private "+"
+- "AFError"
+- !private "BooleanLiteralType"
+- "URL"
+- "AdaptError"
+- "Error"
+- "String"
+- "LocalizedError"
+- !private "StringLiteralType"
+- "Int"
+depends-member:
+- ["O9Alamofire7AFError", "Bool"]
+- ["O9Alamofire7AFError", "Error"]
+- ["O9Alamofire7AFError", "Int"]
+- ["O9Alamofire7AFError", "MultipartEncodingFailureReason"]
+- ["O9Alamofire7AFError", "ParameterEncodingFailureReason"]
+- ["O9Alamofire7AFError", "RawValue"]
+- ["O9Alamofire7AFError", "ResponseSerializationFailureReason"]
+- ["O9Alamofire7AFError", "ResponseValidationFailureReason"]
+- ["O9Alamofire7AFError", "String"]
+- ["O9Alamofire7AFError", "URL"]
+- ["O9Alamofire7AFError", "URLConvertible"]
+- ["O9Alamofire7AFError", "acceptableContentTypes"]
+- ["O9Alamofire7AFError", "errorDescription"]
+- ["O9Alamofire7AFError", "init"]
+- ["O9Alamofire7AFError", "invalidURL"]
+- ["O9Alamofire7AFError", "isInvalidURLError"]
+- ["O9Alamofire7AFError", "isMultipartEncodingError"]
+- ["O9Alamofire7AFError", "isParameterEncodingError"]
+- ["O9Alamofire7AFError", "isResponseSerializationError"]
+- ["O9Alamofire7AFError", "isResponseValidationError"]
+- ["O9Alamofire7AFError", "multipartEncodingFailed"]
+- ["O9Alamofire7AFError", "parameterEncodingFailed"]
+- ["O9Alamofire7AFError", "rawValue"]
+- ["O9Alamofire7AFError", "responseCode"]
+- ["O9Alamofire7AFError", "responseContentType"]
+- ["O9Alamofire7AFError", "responseSerializationFailed"]
+- ["O9Alamofire7AFError", "responseValidationFailed"]
+- ["O9Alamofire7AFError", "urlConvertible"]
+- ["V9Alamofire10AdaptError", "Error"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Sa", "joined"]
+- !private ["Ps23ArrayLiteralConvertible", "joined"]
+- !private ["Sb", "deinit"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "joined"]
+- ["Ps10Comparable", "Encoding"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Encoding"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "joined"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "joined"]
+- !private ["Sd", "deinit"]
+- ["Ps9Equatable", "Encoding"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "Encoding"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- ["Ps8Hashable", "Encoding"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps9Indexable", "joined"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- ["Ps14MirrorPathType", "Encoding"]
+- !private ["Ps14MirrorPathType", "init"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "Error"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "String"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "URL"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartFileIsDirectory"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartFileNotReachable"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartFileNotReachableWithError"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartFileSizeNotAvailable"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartFileSizeQueryFailedWithError"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartFilenameInvalid"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartInputStreamCreationFailed"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "bodyPartURLInvalid"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "inputStreamReadFailed"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "outputStreamCreationFailed"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "outputStreamFileAlreadyExists"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "outputStreamURLInvalid"]
+- ["OO9Alamofire7AFError30MultipartEncodingFailureReason", "outputStreamWriteFailed"]
+- !private ["Ps21MutableCollectionType", "joined"]
+- !private ["Ps16MutableIndexable", "joined"]
+- !private ["Ps16MutableSliceable", "joined"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "deinit"]
+- ["Ps16OutputStreamType", "Encoding"]
+- !private ["Ps16OutputStreamType", "init"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "Error"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "String"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "jsonEncodingFailed"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "missingURL"]
+- ["OO9Alamofire7AFError30ParameterEncodingFailureReason", "propertyListEncodingFailed"]
+- !private ["Ps30RangeReplaceableCollectionType", "joined"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "invalidURL"]
+- ["Ps16RawRepresentable", "multipartEncodingFailed"]
+- ["Ps16RawRepresentable", "parameterEncodingFailed"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", "responseSerializationFailed"]
+- ["Ps16RawRepresentable", "responseValidationFailed"]
+- ["Ps16RawRepresentable", ""]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "Error"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "String"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "URL"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "inputDataNil"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "inputDataNilOrZeroLength"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "inputFileNil"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "inputFileReadFailed"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "jsonSerializationFailed"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "propertyListSerializationFailed"]
+- ["OO9Alamofire7AFError34ResponseSerializationFailureReason", "stringSerializationFailed"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "Int"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "String"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "URL"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "acceptableContentTypes"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "dataFileNil"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "dataFileReadFailed"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "localizedDescription"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "missingContentType"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "responseCode"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "responseContentType"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "unacceptableContentType"]
+- ["OO9Alamofire7AFError31ResponseValidationFailureReason", "unacceptableStatusCode"]
+- !private ["Ps12SequenceType", "joined"]
+- ["Ps10Streamable", "Encoding"]
+- !private ["Ps10Streamable", "init"]
+- ["SS", "Encoding"]
+- !private ["SS", "init"]
+- ["Ps30StringInterpolationConvertible", "Encoding"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- ["Ps24StringLiteralConvertible", "Encoding"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- ["P9Alamofire14URLConvertible", "Encoding"]
+- !private ["P9Alamofire14URLConvertible", "init"]
+- !private ["Sc", "deinit"]
+- ["Ps31UnicodeScalarLiteralConvertible", "Encoding"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps10_ArrayType", "joined"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "Encoding"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Ps32_BuiltinStringLiteralConvertible", "Encoding"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "Encoding"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "Encoding"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "joined"]
+- ["Ps21_ObjectiveCBridgeable", "Encoding"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "joined"]
+- ["Ps12_Reflectable", "Encoding"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "joined"]
+depends-nominal:
+- "O9Alamofire7AFError"
+- "V9Alamofire10AdaptError"
+- !private "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- "Ps14MirrorPathType"
+- "OO9Alamofire7AFError30MultipartEncodingFailureReason"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- "Ps16OutputStreamType"
+- "OO9Alamofire7AFError30ParameterEncodingFailureReason"
+- !private "Ps30RangeReplaceableCollectionType"
+- "Ps16RawRepresentable"
+- "OO9Alamofire7AFError34ResponseSerializationFailureReason"
+- "OO9Alamofire7AFError31ResponseValidationFailureReason"
+- !private "Ps12SequenceType"
+- "Ps10Streamable"
+- "SS"
+- "Ps30StringInterpolationConvertible"
+- "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- "P9Alamofire14URLConvertible"
+- !private "Sc"
+- "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps10_ArrayType"
+- "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "Ps32_BuiltinStringLiteralConvertible"
+- "Ps37_BuiltinUTF16StringLiteralConvertible"
+- "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "0a374ec1f25fc17e37d0b23257d932a6"
