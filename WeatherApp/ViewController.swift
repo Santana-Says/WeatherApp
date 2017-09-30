@@ -16,6 +16,10 @@ class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var tempLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var sunriseLbl: UILabel!
+    @IBOutlet weak var windLbl: UILabel!
+    @IBOutlet weak var tempHighLbl: UILabel!
+    @IBOutlet weak var bottomStack: UIStackView!
     
     var weather: Weather!
     
@@ -25,26 +29,30 @@ class ViewController: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.Done
         
-        weather = Weather(city: "Colorado")
-        print(weather.city)
-        print(weather.datetime)
-        weather.downloadWeatherSpecs { () -> () in
-            self.updateUI()
-        }
         
     }
     
     func updateUI() {
+        weather.getDaytime()
         datetimeLbl.text = weather.datetime
         tempLbl.text = weather.degrees
         descriptionLbl.text = weather.description
         weather.getImage(descriptionLbl.text!)
         weatherImg.image = UIImage(named: "\(weather.image)")
         cityLbl.text = weather.city
+        sunriseLbl.text = weather.sunrise
+        windLbl.text = weather.wind
+        tempHighLbl.text = weather.tempHigh
+        bottomStack.hidden = false
+        
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         view.endEditing(true)
+        weather = Weather(city: searchBar.text!)
+        weather.downloadWeatherSpecs { () -> () in
+            self.updateUI()
+        }
     }
 
 

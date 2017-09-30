@@ -7,29 +7,35 @@ provides-member:
 - ["C10WeatherApp7Weather", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
-- !private "*"
-- !private "NSURL"
-- !private "URL_APIKEY"
-- !private "=="
 - !private "~="
-- !private "Int"
-- !private "StringLiteralType"
-- !private "URL_COUNTRYCODE"
-- !private "AnyObject"
-- !private "NSDate"
-- "String"
-- !private "/"
-- "DownloadComplete"
-- !private "NSCalendar"
-- !private "-"
-- !private "URL_CITY_BASE"
-- !private "URL_BASE"
-- !private "Alamofire"
-- !private "Double"
-- !private "Dictionary"
+- !private "BooleanLiteralType"
 - !private "NSDateFormatter"
+- !private "UnicodeScalarType"
+- !private "AnyObject"
 - "Weather"
+- !private "-"
+- !private "NSDate"
+- !private "URL_APIKEY"
+- !private "Alamofire"
+- !private ">"
+- !private "*"
+- !private "NSCalendar"
+- !private "Dictionary"
+- "DownloadComplete"
+- !private "StringLiteralType"
+- "Bool"
+- !private "URL_ZIP_BASE"
+- !private "||"
+- !private "/"
+- !private "!"
+- "Double"
+- "String"
+- !private "URL_CITY_BASE"
+- !private "NSURL"
+- !private "!="
+- "Int"
+- !private "=="
+- !private "URL_BASE"
 depends-member:
 - !private ["Ps9AnyObject", "AMSymbol"]
 - !private ["Ps9AnyObject", "Alamofire"]
@@ -42,24 +48,33 @@ depends-member:
 - !private ["Ps9AnyObject", "URL_APIKEY"]
 - !private ["Ps9AnyObject", "URL_BASE"]
 - !private ["Ps9AnyObject", "URL_CITY_BASE"]
-- !private ["Ps9AnyObject", "URL_COUNTRYCODE"]
+- !private ["Ps9AnyObject", "URL_ZIP_BASE"]
 - !private ["Ps9AnyObject", "_city"]
+- !private ["Ps9AnyObject", "_cityUrl"]
 - !private ["Ps9AnyObject", "_datetime"]
 - !private ["Ps9AnyObject", "_description"]
 - !private ["Ps9AnyObject", "_image"]
+- !private ["Ps9AnyObject", "_isNight"]
+- !private ["Ps9AnyObject", "_sunrise"]
+- !private ["Ps9AnyObject", "_sunset"]
+- !private ["Ps9AnyObject", "_tempHigh"]
 - !private ["Ps9AnyObject", "_temperature"]
-- !private ["Ps9AnyObject", "_weatherUrl"]
+- !private ["Ps9AnyObject", "_wind"]
+- !private ["Ps9AnyObject", "_zipUrl"]
 - !private ["Ps9AnyObject", "component"]
 - !private ["Ps9AnyObject", "containsString"]
+- !private ["Ps9AnyObject", "convertKelvinToFarh"]
 - !private ["Ps9AnyObject", "currentCalendar"]
 - !private ["Ps9AnyObject", "dateFormat"]
-- !private ["Ps9AnyObject", "getDayOfWeek"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "nightOrDay"]
 - !private ["Ps9AnyObject", "responseJSON"]
+- !private ["Ps9AnyObject", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps9AnyObject", "stringFromDate"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "uppercaseString"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "Hour"]
 - !private ["Ps23ArrayLiteralConvertible", "Weekday"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
@@ -80,6 +95,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "currentCalendar"]
 - !private ["Ps11CVarArgType", "dateFormat"]
 - !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps11CVarArgType", "stringFromDate"]
 - !private ["Ps11CVarArgType", "uppercaseString"]
 - !private ["Vs9Character", "deinit"]
@@ -92,11 +108,12 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "containsString"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps10Comparable", "uppercaseString"]
 - !private ["Ps28CustomDebugStringConvertible", "AMSymbol"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "PMSymbol"]
-- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "component"]
 - !private ["Ps28CustomDebugStringConvertible", "containsString"]
 - !private ["Ps28CustomDebugStringConvertible", "currentCalendar"]
@@ -104,6 +121,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
 - !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps28CustomDebugStringConvertible", "stringFromDate"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "uppercaseString"]
@@ -121,6 +139,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "responseJSON"]
 - !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps23CustomStringConvertible", "stringFromDate"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "uppercaseString"]
@@ -134,6 +153,7 @@ depends-member:
 - !private ["Ps9Equatable", "AMSymbol"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "GET"]
+- !private ["Ps9Equatable", "Hour"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "PMSymbol"]
 - !private ["Ps9Equatable", "Weekday"]
@@ -143,10 +163,12 @@ depends-member:
 - !private ["Ps9Equatable", "currentCalendar"]
 - !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps9Equatable", "stringFromDate"]
 - !private ["Ps9Equatable", "uppercaseString"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "containsString"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
 - !private ["Sf", "deinit"]
 - !private ["Ps16ForwardIndexType", "Distance"]
@@ -164,6 +186,7 @@ depends-member:
 - !private ["Ps8Hashable", "currentCalendar"]
 - !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps8Hashable", "stringFromDate"]
 - !private ["Ps8Hashable", "uppercaseString"]
 - !private ["SQ", "deinit"]
@@ -195,9 +218,11 @@ depends-member:
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "containsString"]
 - !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps14MirrorPathType", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps14MirrorPathType", "uppercaseString"]
 - !private ["CSo10NSCalendar", "component"]
 - !private ["CSo10NSCalendar", "currentCalendar"]
+- !private ["VSC14NSCalendarUnit", "Hour"]
 - !private ["VSC14NSCalendarUnit", "Weekday"]
 - !private ["PSo8NSCoding", "AMSymbol"]
 - !private ["PSo8NSCoding", "PMSymbol"]
@@ -206,6 +231,7 @@ depends-member:
 - !private ["PSo8NSCoding", "currentCalendar"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo8NSCoding", "stringFromDate"]
 - !private ["PSo8NSCoding", "uppercaseString"]
 - !private ["PSo9NSCopying", "AMSymbol"]
@@ -216,6 +242,7 @@ depends-member:
 - !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo9NSCopying", "stringFromDate"]
 - !private ["PSo9NSCopying", "uppercaseString"]
 - !private ["CSo6NSDate", "init"]
@@ -231,6 +258,7 @@ depends-member:
 - !private ["CSo11NSFormatter", "stringFromDate"]
 - !private ["PSo16NSMutableCopying", "containsString"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo16NSMutableCopying", "uppercaseString"]
 - !private ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSObject", "AMSymbol"]
@@ -241,6 +269,7 @@ depends-member:
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "stringByReplacingOccurrencesOfString"]
 - !private ["CSo8NSObject", "stringFromDate"]
 - !private ["CSo8NSObject", "uppercaseString"]
 - !private ["PSo16NSObjectProtocol", "AMSymbol"]
@@ -250,33 +279,39 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "currentCalendar"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo16NSObjectProtocol", "stringFromDate"]
 - !private ["PSo16NSObjectProtocol", "uppercaseString"]
 - !private ["PSo14NSSecureCoding", "component"]
 - !private ["PSo14NSSecureCoding", "containsString"]
 - !private ["PSo14NSSecureCoding", "currentCalendar"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo14NSSecureCoding", "uppercaseString"]
 - !private ["CSo8NSString", "containsString"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "stringByReplacingOccurrencesOfString"]
 - !private ["CSo8NSString", "uppercaseString"]
 - !private ["CSo5NSURL", "init"]
 - !private ["CSo16NSURLSessionTask", "deinit"]
 - !private ["CSo7NSValue", "deinit"]
-- !private ["Ps21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps21NilLiteralConvertible", "subscript"]
+- !private ["Ps13OptionSetType", "Hour"]
 - !private ["Ps13OptionSetType", "Weekday"]
-- !private ["Sq", "Some"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Sq", "subscript"]
 - !private ["Ps16OutputStreamType", "containsString"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16OutputStreamType", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps16OutputStreamType", "uppercaseString"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "init"]
 - !private ["Vs5Range", "deinit"]
 - !private ["Ps16RawRepresentable", "GET"]
+- !private ["Ps16RawRepresentable", "Hour"]
 - !private ["Ps16RawRepresentable", "Weekday"]
 - !private ["C9Alamofire7Request", "responseJSON"]
 - !private ["V9Alamofire8Response", "result"]
@@ -287,6 +322,7 @@ depends-member:
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps14SetAlgebraType", "Hour"]
 - !private ["Ps14SetAlgebraType", "Weekday"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
@@ -300,6 +336,7 @@ depends-member:
 - !private ["Vs5Slice", "_Element"]
 - !private ["Ps10Streamable", "containsString"]
 - !private ["Ps10Streamable", "init"]
+- !private ["Ps10Streamable", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps10Streamable", "uppercaseString"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
@@ -307,12 +344,15 @@ depends-member:
 - !private ["SS", "containsString"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["SS", "stringByReplacingOccurrencesOfString"]
 - !private ["SS", "uppercaseString"]
 - !private ["Ps30StringInterpolationConvertible", "containsString"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps30StringInterpolationConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps30StringInterpolationConvertible", "uppercaseString"]
 - !private ["Ps24StringLiteralConvertible", "containsString"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps24StringLiteralConvertible", "uppercaseString"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
@@ -321,17 +361,20 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["P9Alamofire20URLStringConvertible", "containsString"]
 - !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["P9Alamofire20URLStringConvertible", "uppercaseString"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "containsString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "uppercaseString"]
 - !private ["C10WeatherApp7Weather", "Alamofire"]
 - !private ["C10WeatherApp7Weather", "AnyObject"]
+- ["C10WeatherApp7Weather", "Bool"]
 - !private ["C10WeatherApp7Weather", "Dictionary"]
-- !private ["C10WeatherApp7Weather", "Double"]
+- ["C10WeatherApp7Weather", "Double"]
 - ["C10WeatherApp7Weather", "DownloadComplete"]
-- !private ["C10WeatherApp7Weather", "Int"]
+- ["C10WeatherApp7Weather", "Int"]
 - !private ["C10WeatherApp7Weather", "NSCalendar"]
 - !private ["C10WeatherApp7Weather", "NSDate"]
 - !private ["C10WeatherApp7Weather", "NSDateFormatter"]
@@ -340,38 +383,53 @@ depends-member:
 - !private ["C10WeatherApp7Weather", "URL_APIKEY"]
 - !private ["C10WeatherApp7Weather", "URL_BASE"]
 - !private ["C10WeatherApp7Weather", "URL_CITY_BASE"]
-- !private ["C10WeatherApp7Weather", "URL_COUNTRYCODE"]
+- !private ["C10WeatherApp7Weather", "URL_ZIP_BASE"]
 - !private ["C10WeatherApp7Weather", "_city"]
+- !private ["C10WeatherApp7Weather", "_cityUrl"]
 - !private ["C10WeatherApp7Weather", "_datetime"]
 - !private ["C10WeatherApp7Weather", "_description"]
 - !private ["C10WeatherApp7Weather", "_image"]
+- !private ["C10WeatherApp7Weather", "_isNight"]
+- !private ["C10WeatherApp7Weather", "_sunrise"]
+- !private ["C10WeatherApp7Weather", "_sunset"]
+- !private ["C10WeatherApp7Weather", "_tempHigh"]
 - !private ["C10WeatherApp7Weather", "_temperature"]
-- !private ["C10WeatherApp7Weather", "_weatherUrl"]
+- !private ["C10WeatherApp7Weather", "_wind"]
+- !private ["C10WeatherApp7Weather", "_zipUrl"]
 - ["C10WeatherApp7Weather", "city"]
+- ["C10WeatherApp7Weather", "convertKelvinToFarh"]
 - ["C10WeatherApp7Weather", "datetime"]
 - ["C10WeatherApp7Weather", "degrees"]
 - ["C10WeatherApp7Weather", "deinit"]
 - ["C10WeatherApp7Weather", "description"]
 - ["C10WeatherApp7Weather", "downloadWeatherSpecs"]
-- ["C10WeatherApp7Weather", "getDayOfWeek"]
+- ["C10WeatherApp7Weather", "getDaytime"]
 - ["C10WeatherApp7Weather", "getImage"]
 - ["C10WeatherApp7Weather", "image"]
 - ["C10WeatherApp7Weather", "init"]
+- ["C10WeatherApp7Weather", "nightOrDay"]
+- ["C10WeatherApp7Weather", "sunrise"]
+- ["C10WeatherApp7Weather", "tempHigh"]
+- ["C10WeatherApp7Weather", "wind"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "containsString"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "uppercaseString"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "containsString"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "uppercaseString"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "containsString"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "uppercaseString"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "containsString"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "uppercaseString"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
@@ -389,6 +447,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "containsString"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "uppercaseString"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
@@ -398,10 +457,11 @@ depends-member:
 - !private ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
-- !private ["Ps12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "containsString"]
 - !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "stringByReplacingOccurrencesOfString"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "uppercaseString"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
@@ -419,7 +479,7 @@ depends-nominal:
 - !private "Vs9Character"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
-- !private "Ps28CustomDebugStringConvertible"
+- "Ps28CustomDebugStringConvertible"
 - !private "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
@@ -459,9 +519,9 @@ depends-nominal:
 - !private "CSo5NSURL"
 - !private "CSo16NSURLSessionTask"
 - !private "CSo7NSValue"
-- !private "Ps21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - !private "Ps13OptionSetType"
-- !private "Sq"
+- "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
@@ -501,7 +561,7 @@ depends-nominal:
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 - !private "subscript"
@@ -518,4 +578,4 @@ depends-external:
 - "/Users/Santana/Desktop/iOS Projects/Section10/WeatherApp/DerivedData/WeatherApp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "707ee1f6994a9e2b73944fcb4b827f0e"
+interface-hash: "20bf2377e9b7b2b44d012835b95f8848"

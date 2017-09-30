@@ -116,6 +116,7 @@ SWIFT_CLASS("_TtC10WeatherApp11AppDelegate")
 @class UISearchBar;
 @class UILabel;
 @class UIImageView;
+@class UIStackView;
 @class NSBundle;
 @class NSCoder;
 
@@ -127,6 +128,10 @@ SWIFT_CLASS("_TtC10WeatherApp14ViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tempLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cityLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sunriseLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified windLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tempHighLbl;
+@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified bottomStack;
 - (void)viewDidLoad;
 - (void)updateUI;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
